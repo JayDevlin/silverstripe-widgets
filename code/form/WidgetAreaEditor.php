@@ -27,8 +27,8 @@ class WidgetAreaEditor extends FormField
      */
     public function FieldHolder($properties = array())
     {
-        Requirements::css('widgets/css/WidgetAreaEditor.css');
-        Requirements::javascript('widgets/javascript/WidgetAreaEditor.js');
+        Requirements::css(dirname(__FILE__) . '/../css/WidgetAreaEditor.css');
+        Requirements::javascript(dirname(__FILE__) . '/../javascript/WidgetAreaEditor.js');
 
         return $this->renderWith("WidgetAreaEditor");
     }
