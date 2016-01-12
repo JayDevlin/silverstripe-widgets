@@ -27,7 +27,7 @@ class WidgetAreaEditor extends FormField
      */
     public function FieldHolder($properties = array())
     {
-	$moduleDir = substr(Director::makeRelative(dirname(dirname(__FILE__))), 1);
+        $moduleDir = substr(Director::makeRelative(dirname(dirname(__FILE__))), 1);
         Requirements::css($moduleDir . '/css/WidgetAreaEditor.css');
         Requirements::javascript($moduleDir . '/javascript/WidgetAreaEditor.js');
 
